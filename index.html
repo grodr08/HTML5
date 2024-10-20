@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"> 
+        <meta name="Author" content="Giancarlos Rodriguez">
+        <meta name="Description" content="This page contains all the things I am learning how to create as I learn HTML.">
+        <title>My first Web Page</title>
+        <link rel="icon" href="html5.png" type="image/x-icon">
+        <link rel="stylesheet" href="main.css" type="text/css">
+    </head>
+
+    <body>
+        <header>
+            <h1>Hello World</h1>
+
+            <!--Internal Link (same site links)-->
+            <nav aria-label="primary-navigation">
+                <ul>
+                    <li> <a href="#html">Learning HTML</a> </li>
+                    <li> <a href="#vacation">Favorite Vaction Places</a> </li>
+                    <li> <a href="#avoid">Places I don't Like</a> </li>            
+                </ul>
+            </nav>
+        </header>
+
+        <hr>
+
+        <main>
+            <section id="html">
+                <h2>I will learn the following</h2>
+                <img src="img/html_logo_300x300.png" alt="HTML5 Logo" title="I am learning HTML5" width="300" height="300">
+                <figure>
+                    <figcaption>An Example of HTML5 code</figcaption>
+                    <p>
+                        <code>&lt;h1&gt;Hello World!&lt;/h1&gt;</code>
+                    </p>
+                </figure>
+
+                <p>(Ordered) List:</p>
+                <ol>
+                    <li>...Learn <abbr title="Hyper Text MarkUp Language">HTML</abbr></li>
+                    <li>...Learn <a href="https://www.w3schools.com/js/">JavaScript</a></li>
+                    <li>...Learn CSS</li>
+                </ol>
+            </section>
+
+            <hr>
+
+            <section id="vacation">
+                <h2>I want to travel to the following places </h2>
+                <figure>
+                    <img src="img/caribbean.jpg" alt="Caribbean Beach" title="I want to visit a caribbean beach" width="400" height="225" loading="lazy">
+                    <figcaption>Caribbean Beach Getaway</figcaption>
+                </figure>
+                <p>(UnOrdered) Let me tell you where:</p>
+                <figure>
+                    <img src="img/vacation.jpg" alt="Cancun Riviera Resort" title="It's 5 o'clock somewhere!" width="400" height="267" loading="lazy">
+                    <figcaption>Private Riviera Beach</figcaption>
+                </figure>
+                <ul>
+                    <li>Puerto Rico</li>
+                    <!-- This is an absolute reference (link) that takes you to a page on the web -->
+                    <li><abbr title="Dominican Republic">DR</abbr> </li>
+                    <li>Cuba</li>
+                </ul>
+            </section>
+
+            <hr>
+
+            <section id="avoid">
+                <h2>Places I want to Avoid</h2>
+                <p>(Description List) Places:</p>
+                <dl>
+                    <dt>Noth Pole</dt>
+                    <dd>It is too cold for me</dd>
+        
+                    <dt>South Pole</dt>
+                    <dd>It is also too cold for me</dd>
+                </dl>
+            </section>
+        </main>
+
+        <hr>
+
+        <footer>
+            <p>
+                &lt;&lt;&lt; &copy; <a href="about.html">Giancarlos Rodriguez</a> &gt;&gt;&gt;
+            </p>
+            <p>
+                <a href="#">Back to Top</a>
+            </p>
+        </footer>
+    </body>
+</html>
+
