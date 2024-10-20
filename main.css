@@ -17,3 +17,17 @@ a:visited {
 a:hover, a:active {
     color: #eee;
 }
+
+h1 {
+    color: aquamarine;
+}
+h1:hover {
+    color: aqua;
+}
+
+h2 {
+    color: aquamarine;
+}
+ h2:hover {
+    color: aqua;
+ }
