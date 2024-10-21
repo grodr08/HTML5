@@ -18,7 +18,8 @@
                 <ul>
                     <li> <a href="#html">Learning HTML</a> </li>
                     <li> <a href="#vacation">Favorite Vaction Places</a> </li>
-                    <li> <a href="#avoid">Places I don't Like</a> </li>            
+                    <li> <a href="#avoid">Places I don't Like</a> </li>  
+                    <li> <a href="#contact">Contact Me</a> </li>             
                 </ul>
             </nav>
         </header>
@@ -37,20 +38,72 @@
                             <code>&lt;h1&gt;Hello World!&lt;/h1&gt;</code>
                         </p>
                     </figure>
-                </section>
 
-                <p>(Ordered) List:</p>
-                <ol>
-                    <li>...Learn <abbr title="Hyper Text MarkUp Language">HTML</abbr></li>
-                    <li>...Learn <a href="https://www.w3schools.com/js/">JavaScript</a></li>
-                    <li>...Learn CSS</li>
-                </ol>
-                <aside>
-                    <details>
-                        <summary>Quess the <mark>number of hours</mark> I code per day</summary>
-                        <p>I code 2  hours per day</p>
-                    </details>
-                </aside>
+                    <p>(Ordered) List:</p>
+                    <ol>
+                        <li>...Learn <abbr title="Hyper Text MarkUp Language">HTML</abbr></li>
+                        <li>...Learn <a href="https://www.w3schools.com/js/">JavaScript</a></li>
+                        <li>...Learn CSS</li>
+                    </ol>
+                    <aside>
+                        <details>
+                            <summary>Quess the <mark>number of hours</mark> I code per day</summary>
+                            <p>I code 3  hours per day</p>
+                        </details>
+                    </aside>
+
+                    <br>
+
+                    <table>
+                        <caption>My Daily Schedule</caption>
+                        <thead>
+                            <tr>
+                                <th>&nbsp;</th>
+                                <th scope="col">Time</th>
+                                <th scope="col">Activity</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <th scope="row">Morning</th>
+                                <td>
+                                    <time datetime="08:00">8am</time> - <time datetime="11:00">11am</time>
+                                </td>
+                                <td>Write Code</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Break</th>
+                                <td>
+                                    <time datetime="11:00">11am</time> - <time datetime="12:00">12pm</time>
+                                </td>
+                                <td>Eat Lunch</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Afternoon</th>
+                                <td>
+                                    <time datetime="12:00">12pm</time> - <time datetime="17:00">5pm</time>
+                                </td>
+                                <td>Study for Another Courses</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Evening</th>
+                                <td rowspan="2">All Other Times</td>
+                                <td>Free Time</td>
+                            </tr>
+                                <th scope="row">Night</th>
+                                <td>Sleep</td>
+                        </tbody>
+
+                        <tfoot>
+                            <tr scope="row">
+                                <td colspan="3"> 
+                                    And that's what I do every day, 5 days a week. Just eat, sleep, code ..and recharge!
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </section>
             </article>
 
             <hr>
@@ -93,6 +146,40 @@
                     </dl>
                 </section>
             </article>
+
+            <hr>
+
+            <!--Input-->
+            <article id="contact">
+                <h2>Contact Me</h2>
+                <p>I'd really like to hear from you!</p>
+
+                <p>
+                    <form action="https://httpbin.org/get" method="get">
+                        <label for="firstName">First Name</label>
+                        <input type="text" name="firstName" id="firstName" placeholder="John" autocomplete="on" required="true" autofocus>
+                    </form>
+                </p>
+                <p>
+                    <form action="https://httpbin.org/get" method="get">
+                        <label for="LastName">Last Name</label>
+                        <input type="text" name="LastName" id="LastName" placeholder="Doe" autocomplete="on" required="true">
+                    </form>
+                </p>
+                <p>
+                    <form action="https://httpbin.org/get" method="get">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" placeholder="Your Secret" autocomplete="on" required="true">
+                    </form>
+                </p>
+                <p>
+                    <form action="https://httpbin.org/get" method="get">
+                        <label for="phone">Phone</label>
+                        <input type="tel" name="Phone" id="phone" placeholder="1234567890" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" autocomplete="on" required="true">
+                    </form>
+                </p>
+            </article>
+
         </main>
 
         <hr>
