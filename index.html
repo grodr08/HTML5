@@ -178,6 +178,29 @@
                         <input type="tel" name="Phone" id="phone" placeholder="1234567890" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" autocomplete="on" required="true">
                     </form>
                 </p>
+                <p>
+                    <form action="https://httpbin.org/get" method="get">
+                        <label for="decade">Decade</label>
+                        <input type="number" name="Decade" id="decade" min="1950" max="2024" step="2" value="1980">
+                    </form>
+                </p>
+                <p>
+                    <label for="coffee" id="coffee">Favorite Coffee</label>
+                    <select name="coffee" id="coffee">
+                        <optgroup label="Coffees">
+                            <option value="regular coffee">Regular Coffee</option>
+                            <option value="iced coffee">Iced Coffee</option>
+                        </optgroup>
+                        
+                        <optgroup label="Expresso Drinks">
+                            <option value="latte" selected>Latte</option>
+                            <option value="cappuchino">Cappuchino</option>
+                            <option value="cortado">Cortado</option>
+                            <option value="americano">Americano</option>
+                        </optgroup>
+                        <option value="other">Other</option>
+                    </select>
+                </p>
             </article>
 
         </main>
